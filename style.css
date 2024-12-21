@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#card {
+  width: 90%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1vw;
+  text-align: center;
+}
+
+#card>*:not(:last-child) {
+  margin-bottom: 1.3vw;
+}
+
+#card h1 {
+  font-size: 4vw;
+}
+
+#card label,
+#card p {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+#card input {
+  padding: 0.8vw 1vw;
+  border-radius: 20px;
+  border: 0.5px solid #000;
+}
+
+.card_btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.card_btn button {
+  flex-grow: 1;
+  padding: 0.8vw 0;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: indianred;
+  color: #fff;
+  font-size: 2vw;
+}
+
+@media (max-width: 600px) {
+  #card>*:not(:last-child) {
+    margin-bottom: 2.5vw;
+  }
+
+  #card h1 {
+    font-size: 6vw;
+  }
+
+  #card label,
+  #card p {
+    font-size: 3.5vw;
+  }
+
+  #card input {
+    padding: 1.5vw 2vw;
+    border: 0.5px solid #000;
+  }
+
+  .card_btn {
+    gap: 2vw;
+  }
+
+  .card_btn button {
+    padding: 1.6vw 0;
+    font-size: 3.5vw;
+  }
+}
